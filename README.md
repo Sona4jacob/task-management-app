@@ -15,7 +15,7 @@ These instructions will guide you through setting up and running the application
 1. Clone the Repository:
     Open your terminal or command prompt.
     Run the following command to clone the repository:
-                               -> git clone [GitHub Repository Link]
+                               -> git clone https://github.com/Sona4jacob/task-management-app
 
 2. Navigate to the Project Directory:
     Change into the project directory using the following command:
