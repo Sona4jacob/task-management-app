@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="hero">
+        <h1 class="title text-center mb-5">view Task</h1>
+        <!-- task details -->
+        <div class="contain container ">
+            <h3 class="text-center">{{taskData.title}}</h3>
+            <div class="contents">
+                <div class="details pt-4 ps-2">
+                    <p>{{taskData.discription}}</p>
+                    <p class="date">Created on : {{taskData.date}}</p>
+                </div>
+                <div class="icons pt-5">
+                    <a routerLink="/tasklist/task/edit-task/{{taskData.id}}" class="me-4">
+                        <img src="https://i.postimg.cc/LXV6wXwG/2074205.png" alt="">
+                    </a>
+                    <a href="" (click)="deleteTask()">
+                        <img src="https://i.postimg.cc/C1jH2WGz/trash.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- back to home button -->
+        <div class="text-center mt-5">
+            <button routerLink="/" class="add-button ps-5 pe-5 pt-1 pb-1">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>

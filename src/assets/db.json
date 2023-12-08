@@ -1,0 +1,25 @@
+{
+  "task": [
+    {
+      "id": "b69f8296-f6b1-4a0b-897d-0e619075447a",
+      "title": "home work",
+      "discription": "do maths homework",
+      "date": "Dec 7, 2023, 8:24:01 PM",
+      "status": "Completed"
+    },
+    {
+      "id": "b794a929-f98d-46d8-b50c-16e89215841e",
+      "title": "drink water",
+      "discription": "drink  water",
+      "date": "Dec 8, 2023, 11:58:22 AM",
+      "status": "Pending"
+    },
+    {
+      "id": "9ed035f1-d9cc-40d0-984b-83233e0ca3e0",
+      "title": "exersise",
+      "discription": "take 5 pushups",
+      "date": "Dec 8, 2023, 1:21:08 PM",
+      "status": "Completed"
+    }
+  ]
+}

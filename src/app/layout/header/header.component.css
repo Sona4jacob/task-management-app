@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+#nav {
+  background-color: #1f1e1e;
+}
+.navbar-brand {
+  color: rgb(0, 230, 122);
+}

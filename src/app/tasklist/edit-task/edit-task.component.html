@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="head text-center mb-5">edit task</h2>
+      <!--edit form -->
+      <form (ngSubmit)="updateTask()" action="" class="mb-5">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">title</label>
+          <input
+            [(ngModel)]="taskData.title"
+            type="text"
+            name="title"
+            class="form-control"
+            id="exampleFormControlInput1"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1 " class="form-label"
+            >discription</label
+          >
+          <textarea
+            [(ngModel)]="taskData.discription"
+            name="discription"
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="text-center pb-4 pt-4">
+          <button class="add-button ps-5 pe-5 pt-1 pb-1">update</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

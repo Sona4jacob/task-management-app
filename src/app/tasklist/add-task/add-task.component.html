@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="head text-center mb-4">Add new task</h2>
+      <form
+        (ngSubmit)="addNewTask()"
+        [formGroup]="taskForm"
+        action=""
+        class="mb-5"
+      >
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Title</label>
+          <input
+            type="text"
+            formControlName="title"
+            class="form-control"
+            id="exampleFormControlInput2"
+          />
+        </div>
+        <div
+          *ngIf="
+            this.taskForm.get('title')?.errors &&
+            this.taskForm.get('title')?.touched
+          "
+        >
+          <p
+            style="
+              color: red;
+              font-family: cinzel;
+              font-size: 15px;
+              text-align: center;
+            "
+          >
+            please fill this field
+          </p>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1 " class="form-label"
+            >discription</label
+          >
+          <textarea
+            class="form-control"
+            formControlName="discription"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div
+          *ngIf="
+            this.taskForm.get('discription')?.errors &&
+            this.taskForm.get('discription')?.touched
+          "
+        >
+          <p
+            style="
+              color: red;
+              font-family: cinzel;
+              font-size: 15px;
+              text-align: center;
+            "
+          >
+            please fill this field
+          </p>
+        </div>
+        <div class="text-center pb-4 pt-4">
+          <button type="submit" class="add-button ps-5 pe-5 pt-1 pb-1">
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
